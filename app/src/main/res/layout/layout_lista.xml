@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--
+        Criação de um layout genérico
+
+        Este layout será o mesmo da lista de servidores, quanto o de mensagens
+
+        Observe que a altura do layout é wrap_content;
+
+        ####
+        Usar cores disponíveis no android:
+        android:textColor="@android:color/black"
+    -->
+
+    <TextView
+        android:id="@+id/identificador"
+        android:layout_marginTop="5dp"
+        android:textSize="8pt"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NICK DO USUÁRIO" />
+
+    <TextView
+        android:id="@+id/descricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="MENSAGEM DO USUÁRIO"
+        android:textSize="7pt" />
+
+</LinearLayout>

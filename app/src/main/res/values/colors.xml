@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Cor do seu aplicativo-->
+    <color name="colorPrimary">#009688</color>
+    <!--Barra de notificação-->
+    <color name="colorPrimaryDark">#00796B</color>
+    <!--Cor de destaque-->
+    <color name="colorAccent">#607D8B</color>
+
+    <!--Paleta de cores: https://www.materialpalette.com/blue/blue-->
+
+</resources>

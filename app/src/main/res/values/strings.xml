@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Message</string>
+
+    <string name="ola_mundo">Olá Mundo!</string>
+
+    <!--TELA PRINCIPAL-->
+    <string name="label_nick">Digite seu NICK</string>
+    <string name="hint_nick">Nick</string>
+    <string name="hint_salvar">Salvar</string>
+    <string name="hint_digite_sua_mensagem">Digite sua mensagem</string>
+</resources>

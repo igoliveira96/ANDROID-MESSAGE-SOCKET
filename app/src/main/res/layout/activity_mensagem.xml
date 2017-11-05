@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--
+        Este RecyclerView é a nossa lista de mensagens
+
+        Este atributo serve para ponderar o tamanho do elemento
+        android:layout_weight="1"
+
+        Perto de 0 a altura do elemento é maior
+        Longe de 0 a atulra passa a ser menor
+
+        Teste:
+        RecyclerView: android:layout_weight="20"
+        RelativeLayout: android:layout_weight="10"
+        RelativeLayout: android:layout_height="wrap_content" para android:layout_height="match_parent"
+    -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listaMensagens"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1" />
+
+    <!--
+        Este atributo faz com que um elemento fique do lado esquerdo de um elemento
+        android:layout_toLeftOf="@+id/enviarMensagemFAB"
+        Este atributo só aparece para quem está dentro de um RelativeLayout
+
+        Há outros atributos, como:
+        Alinhar a diretia: android:layout_alignParentRight="true"
+        Alinhar a esquerda: android:layout_alignParentLeft="true"
+
+        Este atributo diz respeito ao tipo do texto
+        android:inputType="textCapSentences|textMultiLine"
+        Estamos dizendo ao EditText começar com a primeira letra em maiúsculo e que este componenete
+        pode ter múltiplas linhas
+
+        Número de linhas que poderá ser vista pelo EdiText
+        android:maxLines="5"
+
+        O hint deixa uma mensagem no campo que irá desaparecer assim que a pessoa começar a digitar
+        android:hint="@string/hint_digite_sua_mensagem"
+    -->
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/textoEnviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:maxLines="5"
+            android:hint="@string/hint_digite_sua_mensagem"
+            android:layout_toLeftOf="@+id/enviarMensagemFAB"
+            android:layout_alignParentLeft="true"
+            android:inputType="textCapSentences|textMultiLine" />
+
+        <!--
+            Baixar o ícone send:
+            Ícones: https://material.io/icons/
+
+            android:src="@drawable/ic_send_white_24dp"
+
+            Para o FloatingActionButton funcionar precisa adicionar a dependência:
+            compile 'com.android.support:design:25.3.1'
+
+            O FloatingActionButton é um novo tipo de botão - um novo design de botão
+        -->
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/enviarMensagemFAB"
+            android:layout_alignParentRight="true"
+            app:backgroundTint="@color/colorPrimary"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_send_white_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</LinearLayout>

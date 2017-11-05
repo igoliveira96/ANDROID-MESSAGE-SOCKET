@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    O namespace card_view é utilizado para acessar
+    as propriedades do cardview
+-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center" >
+
+    <!--
+        Minha Definição
+
+        Um CardView é como um painel.
+        Dentro deste painel você pode adicionar outros elementos,
+        como um outro layout, um textview e botão.
+    -->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view:cardBackgroundColor="@color/colorPrimary"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="5dp"
+        android:layout_margin="5dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="8pt"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:text="@string/label_nick" />
+
+            <EditText
+                android:id="@+id/nickUsuarioET"
+                android:textColor="@android:color/white"
+                android:hint="@string/hint_nick"
+                android:textColorHint="@android:color/white"
+                android:inputType="textCapSentences|textPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!--
+                O RelativeLayout é um tipo de layout
+                que não segue uma sequência
+
+                Você fica livre para colocar os seus elementos em
+                qualquer parte da tela
+            -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/adicionarNickBT"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/hint_salvar"
+                    android:textColor="@android:color/white" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
