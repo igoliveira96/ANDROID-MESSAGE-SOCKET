@@ -1,4 +1,4 @@
-# ANDROID-MESSAGE-SOCKET
+# ANDROID MESSAGE SOCKET
 
 Aplicativo de mensagens utilizando a API SOCKET.
 
