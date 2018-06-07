@@ -1,6 +1,6 @@
 # ANDROID MESSAGE SOCKET
 
-Aplicativo de mensagens utilizando a API SOCKET.
+Aplicativo de mensagens com o uso de SOCKET.
 
 O aplicativo possibilita a comunicação em rede sem a necessidade de um servidor externo;
 
@@ -13,5 +13,7 @@ A utilização do aplicativo é bem simples, os passos são:
 
 Somente as pessoas que conectarem no servidor em que você se conectou poderá visualizar as suas mensagens e vice-versa;
 
-Este aplicativo foi utilizado no curso de desenvolvimento ANDROID aplicado no X Seminário de Informática e Tecnologia (SITe);
+Este aplicativo foi utilizado no curso de Desenvolvimento ANDROID aplicado no X Seminário de Informática e Tecnologia (SITe);
 Evento que aconteceu na Universidade Estadual do Norte do Paraná (UENP) - Campus Luiz Meneghel;
+
+Link do evento: ***colocar o link***
