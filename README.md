@@ -17,3 +17,5 @@ Este aplicativo foi utilizado no curso de Desenvolvimento ANDROID aplicado no X 
 Evento que aconteceu na Universidade Estadual do Norte do Paraná (UENP) - Campus Luiz Meneghel;
 
 Link do evento: ***colocar o link***
+
+Tutorial: ***colocar o link do wiki***
